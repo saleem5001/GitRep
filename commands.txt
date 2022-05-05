@@ -1,0 +1,91 @@
+saleahme@LIN49004482 MINGW64 /c
+$ ls
+'$Recycle.Bin'/             DumpStack.log.tmp  'Program Files'/         SMSTSLog/                     hiberfil.sys
+'$WinREAgent'/              Eracent.epa/       'Program Files (x86)'/  'System Volume Information'/   installerLog.txt
+ ClickShareApp/             Git/                ProgramData/            Users/                        pagefile.sys
+'Documents and Settings'@   Intel/              Recovery/               Windows/                      swapfile.sys
+ DumpStack.log              PerfLogs/           SCCM_Logs/              bootTel.dat
+
+add user in github account 
+
+saleahme@LIN49004482 MINGW64 /c
+$ git config --global user.name "saleem5001"
+
+saleahme@LIN49004482 MINGW64 /c
+$ git config --global user.email saleemyunus007@gmail.com
+
+
+saleahme@LIN49004482 MINGW64 /c
+$ cd Git/
+
+saleahme@LIN49004482 MINGW64 /c/Git
+$ git config --global user.name "saleem5001"
+
+saleahme@LIN49004482 MINGW64 /c/Git
+$ git config --global user.email saleemyunus007@gmail.com
+
+
+clone repo with your account 
+saleahme@LIN49004482 MINGW64 /c/Git
+$ git clone https://github.com/saleem5001/SaleemResume.git
+Cloning into 'SaleemResume'...
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 19 (delta 3), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (19/19), 152.49 KiB | 382.00 KiB/s, done.
+Resolving deltas: 100% (3/3), done.
+
+saleahme@LIN49004482 MINGW64 /c/Git
+$ ls
+SaleemResume/  test
+
+
+Add the repo with github 
+saleahme@LIN49004482 MINGW64 /c/Git
+
+
+saleahme@LIN49004482 MINGW64 /c/Git/SaleemResume (Master)
+$ ls
+ README.md  'Saleem Updated new1.docx'  'Saleem.A Resume April.docx'   test   testchild.py
+
+saleahme@LIN49004482 MINGW64 /c/Git/SaleemResume (Master)
+$ git add test
+
+saleahme@LIN49004482 MINGW64 /c/Git/SaleemResume (Master)
+$ git status
+On branch Master
+Your branch is up to date with 'origin/Master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test
+
+ commit the new repo for github
+
+saleahme@LIN49004482 MINGW64 /c/Git/SaleemResume (Master)
+$ git commit -m "this is my first file" test
+[Master d5d612d] this is my first file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test
+
+Push the new repo with github
+
+saleahme@LIN49004482 MINGW64 /c/Git/SaleemResume (Master)
+$ git push -u origin master
+fatal: master cannot be resolved to branch
+
+merge the rep with github bransh
+
+saleahme@LIN49004482 MINGW64 /c/Git/SaleemResume (Master)
+$ git push -u origin Master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/saleem5001/SaleemResume.git
+   3ee3053..d5d612d  Master -> Master
+branch 'Master' set up to track 'origin/Master'.
