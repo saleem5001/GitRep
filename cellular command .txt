@@ -1,0 +1,1 @@
+./docclient read S9497,Network,state | jq '.Document.mx_config.uplinkStatus[0].uplinks[] | "Interface name: \(.interface) (IP \(.publicIp))"'
